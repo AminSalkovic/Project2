@@ -1,0 +1,44 @@
+.homebar{
+    width: 60px;
+    height: 930px;
+    background: #1495F0;
+}
+.homebar span{
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 10px;
+}
+.homebar a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.pulse{
+    margin-top: 40px;
+    color: #FFFFFF;
+}
+.ul-items{
+    list-style: none;
+    margin-top: 40px;
+}
+.pulse,
+.pulseActive,
+.active,
+.nav-item{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+.pulseActive
+,.active{
+    color: #1495F0;
+    background-color: #FFFFFF;
+}
+.pulseActive{
+    margin-top: 40px;
+}

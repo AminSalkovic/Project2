@@ -1,0 +1,13 @@
+.sidebar{
+    position: absolute;
+    top:60px;
+    right: 0;
+    width: 310px;
+    height: 860px;
+    border: 1px solid black;
+    transition: 5s;
+    background-color: var(--white);
+}
+.sidebar-active{
+  right: 0;
+}
