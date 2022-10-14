@@ -11,14 +11,16 @@ import Actions from './components/pages/Actions';
 function App() {
   return (
     <div className="App">
-       <Homebar/>
        <Focusbar/>
+       <div className="container">
+       <Homebar/>
        <Routes>
         <Route path='' element={<Home/>}/>
         <Route path={'/meeting'} element={<Meeting/>}/>
         <Route path={'/items'} element={<Items/>}/>
         <Route path={'/actions'} element={<Actions/>}/>
        </Routes>
+       </div>
     </div>
   );
 }

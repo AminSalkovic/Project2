@@ -6,6 +6,6 @@
     --blue: #1495F0; 
     --white:#FFFFFF;
 }
-.App{
- display: flex;
+.container{
+    display: flex;
 }

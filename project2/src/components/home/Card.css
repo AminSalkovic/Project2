@@ -1,0 +1,36 @@
+.card{
+    width: 122px;
+    height: 71px;
+    background:var(--white);
+    box-shadow: 0px 0px 10px rgba(160, 160, 160, 0.1);
+    border-radius: 5px;
+}
+.section1{
+    display: flex;
+    justify-content: space-between;
+}
+.icon1,.icon2,.icon3,.icon4,.icon5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    font-size: 19px;
+    color: #fff;
+}
+.icon1{
+    background: var(--blue);
+}
+.icon2{
+    background: rgb(243, 62, 189);
+}
+.icon3{
+    background: rgb(223, 22, 22);
+}
+.icon4{
+    background:rgb(231, 130, 14);
+}
+.icon5{
+    background: green;
+}

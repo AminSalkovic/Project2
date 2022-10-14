@@ -1,4 +1,6 @@
 .homebar{
+    position: absolute;
+    top:0% ;
     width: 60px;
     height: 930px;
     background: #1495F0;
@@ -15,7 +17,7 @@
     color: #FFFFFF;
 }
 .pulse{
-    margin-top: 40px;
+    margin-top: 50px;
     color: #FFFFFF;
 }
 .ul-items{
@@ -40,5 +42,5 @@
     background-color: #FFFFFF;
 }
 .pulseActive{
-    margin-top: 40px;
+    margin-top: 50px;
 }

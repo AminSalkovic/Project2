@@ -25,6 +25,7 @@ const itemsList = [
     }
 ]
 
+
 const tasks = [
     {
         img: '', //path
