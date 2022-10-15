@@ -7,11 +7,23 @@
   border: 1px solid red;
 }
 .title-card h1{
-    font-size: 20px;
+    font-size: 16px;
+    color: #120C39;
 }
-.image{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 1px solid black;
+.date{
+  display: flex;
+  width: 60px;
+  justify-content: space-between;
+}
+.calendar-color{
+  width: 6px;
+  height: 35px;
+  background: #5CB85C;
+  border-radius: 0px 4px 4px 0px;
+}
+.calendar-date{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

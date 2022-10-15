@@ -10,7 +10,7 @@ import Tasks from '../alldata/Tasks'
 import TitleCard from './cards/TitleCard'
 import Userscard from './cards/Userscard'
 import Taskcard from './cards/Taskcard'
-
+import Actions from '../alldata/Actinos'
 
 const Home = () => {
   const[showSidebar,setShowSidebar]=useState(false)
@@ -39,16 +39,17 @@ const Home = () => {
               </div> 
          <button className={showSidebar?'quick-item-active':'quick-item'}>+ Quick Item</button>  
       </div>
+
+
       <div className={showSidebar?'width-small':'width-long'}>
         <div className="part3-bar">
              <div className="first-part">
-              <ul>
-                <li></li>
-              </ul>
+            
              </div>
              <div className="second-part"></div>
         </div>
       </div>
+
       <div className={showSidebar?'width-small':'width-long'}>
         <div className="part4-bar">
              <div className="first-part">
@@ -57,23 +58,25 @@ const Home = () => {
                     title={el.title}
                     businessUnit={el.businessUnit}
                     date={el.date}
+                    month={el.month}
                   />
                 })}
              </div>
              <div className="second-part">
                 {ItemsList.map((el,index)=>{
                   return <Userscard key={index}
-                   image={el.image}
+                   img={el.img}
                    status={el.status}
                    delay={el.delay}
                   />
                 })}
              </div>
         </div>
-        <div className="part5-bar">
+        <div className="part5-bar" >
              <div className="first-part">
                 {Tasks.map((el,index)=>{
                   return <Taskcard key={index}
+                    img={el.img}
                     title={el.title}
                     subtitle={el.subtitle}
                     progress={el.progress}
@@ -81,7 +84,14 @@ const Home = () => {
                 })}
              </div>
              <div className="second-part">
-                
+                 {Actions.map((el,index)=>{
+                   return <Taskcard key={index}
+                   img={el.img}
+                   title={el.title}
+                   subtitle={el.subtitle}
+                   progress={el.progress}
+                 />
+                 })}
              </div>
         </div>
       </div>
