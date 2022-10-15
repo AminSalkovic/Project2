@@ -44,9 +44,19 @@ const Home = () => {
       <div className={showSidebar?'width-small':'width-long'}>
         <div className="part3-bar">
              <div className="first-part">
-            
+                   <div className="titles">
+                  <p className='date-p'>Date</p>
+                  <p className='title-p'>Title</p>
+                  <p>Business Unit</p>
+                   </div>
              </div>
-             <div className="second-part"></div>
+             <div className="second-part">
+             <div className="titles">
+                  <p className='withuser-p'>With User</p>
+                  <p >Delay</p>
+                  <p>Status</p>
+                   </div>
+             </div>
         </div>
       </div>
 
@@ -70,6 +80,7 @@ const Home = () => {
                    delay={el.delay}
                    date={el.date}
                    month={el.month}
+                   userImg={el.userImg}
                   />
                 })}
              </div>
