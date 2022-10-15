@@ -1,0 +1,36 @@
+.meetingcard{
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.urgent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 17px;
+    background: #ffbfce;
+    color: #f02ac5;
+    border-radius: 14px;
+}
+.meetingname h1{
+    color: #787878;
+    font-size: 17px;
+    margin-left: 3px;
+}
+.meetingname-div{
+    display: flex;
+    align-items: center;
+}
+.point{
+    margin-left: 7px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--blue);
+}
+.meetingname p{
+    margin-left: 17px;
+    color: var(--blue);
+}

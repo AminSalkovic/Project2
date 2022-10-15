@@ -4,7 +4,7 @@
     align-items: center;
     width: 100%;
     height: 80px;
-    border: 1px solid #ff6d0c;
+    border: 1px solid #ec7456;
     border: 1px solid rgb(255, 61, 2);
 }
 .image{
@@ -37,3 +37,25 @@
     height: 30px;
     border-radius: 4px
 }
+.date{
+    position: absolute;
+    left: 76px;
+    display: flex;
+    width: 60px;
+    justify-content: space-evenly;
+  }
+  .calendar-color{
+    width: 6px;
+    height: 35px;
+    background: #5CB85C;
+    border-radius: 0px 4px 4px 0px;
+  }
+  .calendar-date{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .calendar-date h1{
+    font-size: 16px;
+  }

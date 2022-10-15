@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import * as AiIcons from 'react-icons/ai'
 import Card from './Card'
 import './Home.css'
-import Sidebar from './Sidebar'
+import Sidebar from './sidebar/Sidebar'
 import CardItems from './CardItems'
 import ItemsList from '../alldata/ItemsLists'
 import Tasks from '../alldata/Tasks'
@@ -21,7 +21,7 @@ const Home = () => {
 
     <div className='home'>
         <div className="part1">
-         <h1>Waiting your Action </h1>
+         <h1 className='h1-task'>Waiting your Action </h1>
             <div className="openIcon">
             <AiIcons.AiOutlineDoubleLeft onClick={handleSidebar}/>
             </div>
@@ -30,11 +30,11 @@ const Home = () => {
             <div className="card-rows">
                 {CardItems.map((item,index)=>{
                   return <Card key={index} 
-                  id={item.id}
-                  number={item.number}
-                  title={item.title}
-                  icon={item.icon}
-                  />
+                    id={item.id}
+                    number={item.number}
+                    title={item.title}
+                    icon={item.icon}
+                    />
                 })}
               </div> 
          <button className={showSidebar?'quick-item-active':'quick-item'}>+ Quick Item</button>  
@@ -68,12 +68,16 @@ const Home = () => {
                    img={el.img}
                    status={el.status}
                    delay={el.delay}
+                   date={el.date}
+                   month={el.month}
                   />
                 })}
              </div>
         </div>
         <div className="part5-bar" >
              <div className="first-part">
+              <h1 className='h1-task'>Task you initiated</h1>
+              <p className='p-task'>Stay tuned with task you initiated</p>
                 {Tasks.map((el,index)=>{
                   return <Taskcard key={index}
                     img={el.img}
@@ -84,6 +88,8 @@ const Home = () => {
                 })}
              </div>
              <div className="second-part">
+             <h1 className='h1-task' style={{color:'#f70a16'}}>Overdue Actions</h1>
+              <p className='p-task'>You're late,hury up!</p>
                  {Actions.map((el,index)=>{
                    return <Taskcard key={index}
                    img={el.img}

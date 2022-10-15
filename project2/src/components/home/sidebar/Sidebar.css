@@ -1,0 +1,54 @@
+.sidebar{
+    position: absolute;
+    top:50px;
+    right: 0;
+    width: 310px;
+    height: 850px;
+
+    transition: 5s;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+}
+.sidebar-active{
+  right: 0;
+}
+.x{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.x p{
+  margin-left: 10px;
+  font-size: 17px;
+  color: #88859C;
+}
+.x-icon{
+  color: #88859C;
+  font-size: 17px;
+  margin-right: 10px;
+}
+.meeting-p{
+  margin-top: 20px;
+  color: #88859C;
+  margin-left: 15px;
+}
+.add-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.add-item p{
+  margin-top: 20px;
+}
+.add-item input{
+  width: 285px;
+  height: 30px;
+  background: #FFFFFF;
+  border: 1px solid #88859C;
+  border-radius: 3px;
+}
+.calendar-icon{
+  position: absolute;
+  right: 20px;
+  margin-top: 7px;
+}

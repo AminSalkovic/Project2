@@ -1,10 +1,10 @@
 import React from 'react'
 import './Taskcard.css'
 const Taskcard = ({title,subtitle,progress,img}) => {
-  const firstStyle = {backgroundColor:'red',width:'25px'}
-  const secondStyle = {backgroundColor:'orange',width:'30px'}
-  const thirdStyle={backgroundColor:'blue',width:'40px'}
-  const fourthStyle={backgroundColor:'green',width:'55px'}
+  const firstStyle = {backgroundColor:'#f70a16'}
+  const secondStyle = {backgroundColor:'#ff5c11',width:'34px'}
+  const thirdStyle={backgroundColor:'#0f6fec',width:'45px'}
+  const fourthStyle={backgroundColor:'#16da26',width:'53px'}
 
   let style = firstStyle 
   if(progress <= 40){
