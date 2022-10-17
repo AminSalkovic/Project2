@@ -1,17 +1,12 @@
-import React from 'react'
-import { useState } from 'react'
+import React,{useState} from 'react'
 import './QuickItem.css'
+
 const QuickItem = ({closebutton}) => {
-    const[itemTitle,setItemTitle]=useState('')
-    const[empty,setEmpty]=useState(false)
-    const sendForm=(e)=>{
-        e.preventDefault()
-    }
   return (
     <div className='quickitem-form'>
           <h1>Create Quick Item</h1>
           <div className="form-validation">
-            <form onSubmit={sendForm}>
+            <form>
                 <div className="item-title">
                     <p>Item Title</p>
                     <input type="text"/>
@@ -33,6 +28,24 @@ const QuickItem = ({closebutton}) => {
                         <p>Priority</p>
                         <input type="text" />
                     </div>  
+                </div>
+                <div className="checkvalue">
+                    <div className="first-column">
+                       <input type='radio'/>
+                       <label>MarketingCoordinator</label><br />
+                       <input type='radio'/>
+                       <label>Web Designer</label><br />
+                       <input type='radio'/>
+                       <label>President of Sales</label>
+                    </div>
+                    <div className="second-column">
+                        <input type="checkbox" />
+                        <label>Spanish</label><br />
+                        <input type="checkbox" />
+                        <label>Chinese</label><br />
+                        <input type="checkbox" />
+                        <label>Arabic</label>
+                    </div>
                 </div>
                 <div className="message-input">
                     <p>Objective</p>

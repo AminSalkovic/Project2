@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import {Link} from 'react-router-dom'
 import * as AiIcons from 'react-icons/ai'
 import Card from './Card'
 import './Home.css'
@@ -44,8 +43,6 @@ const Home = () => {
               </div> 
          <button  className={showSidebar?'quick-item-active':'quick-item'} onClick={handleQuickItem}>+ Quick Item</button>  
       </div>
-
-
       <div className={showSidebar?'width-small':'width-long'}>
         <div className="part3-bar">
              <div className="first-part">
@@ -64,7 +61,6 @@ const Home = () => {
              </div>
         </div>
       </div>
-
       <div className={showSidebar?'width-small':'width-long'}>
         <div className="part4-bar">
              <div className="first-part">
@@ -124,10 +120,8 @@ const Home = () => {
               />}
               {showQuickItem && <QuickItem 
                     closebutton={setShowQuickItem}
-                    />}
-           
+                />} 
   </div>
-   
   )
 }
 

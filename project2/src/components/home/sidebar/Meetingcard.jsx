@@ -1,6 +1,7 @@
 import React from 'react'
 import './Meetingcard.css'
 const Meetingcard = ({name,date,status}) => {
+  
   return (
     <div className='meetingcard'>
         <div className="meetingname">

@@ -10,6 +10,9 @@
     border-radius: 9px;
 }
 .form-validation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
     height: 85%;
     border-top: 1px solid black;
@@ -18,6 +21,9 @@
 .form-validation h2{
     font-size: 13px;
      color: red;
+}
+.item-title,.message-input{
+   margin-left: 19px;
 }
 .item-title input{
     width: 585px;
@@ -37,6 +43,19 @@
     height: 30px;
     border: 1px solid #88859C;
     border-radius: 3px;
+}
+.checkvalue{
+    display: flex;
+}
+.checkvalue input{
+    margin-top: 7px;
+}
+.first-column{
+    width: 50%;
+    margin-left: 15px;
+}
+.message-input{
+    margin-top: 20px;
 }
 .message-input input{
     width: 585px;
