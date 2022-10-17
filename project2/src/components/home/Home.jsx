@@ -4,6 +4,7 @@ import * as AiIcons from 'react-icons/ai'
 import Card from './Card'
 import './Home.css'
 import Sidebar from './sidebar/Sidebar'
+import QuickItem from './cards/QuickItem'
 import CardItems from './CardItems'
 import ItemsList from '../alldata/ItemsLists'
 import Tasks from '../alldata/Tasks'
@@ -14,8 +15,12 @@ import Actions from '../alldata/Actinos'
 
 const Home = () => {
   const[showSidebar,setShowSidebar]=useState(false)
+  const[showQuickItem,setShowQuickItem]=useState(false)
   const handleSidebar=()=>{
-      setShowSidebar(!showSidebar)
+    setShowSidebar(!showSidebar)
+  }
+  const handleQuickItem=()=>{
+    setShowQuickItem(!showQuickItem)
   }
   return (
 
@@ -37,7 +42,7 @@ const Home = () => {
                     />
                 })}
               </div> 
-         <button className={showSidebar?'quick-item-active':'quick-item'}>+ Quick Item</button>  
+         <button  className={showSidebar?'quick-item-active':'quick-item'} onClick={handleQuickItem}>+ Quick Item</button>  
       </div>
 
 
@@ -95,6 +100,7 @@ const Home = () => {
                     title={el.title}
                     subtitle={el.subtitle}
                     progress={el.progress}
+                    date={el.date}
                   />
                 })}
              </div>
@@ -107,6 +113,7 @@ const Home = () => {
                    title={el.title}
                    subtitle={el.subtitle}
                    progress={el.progress}
+                   date={el.date}
                  />
                  })}
              </div>
@@ -115,6 +122,10 @@ const Home = () => {
             {showSidebar && <Sidebar
               closebutton={setShowSidebar}
               />}
+              {showQuickItem && <QuickItem 
+                    closebutton={setShowQuickItem}
+                    />}
+           
   </div>
    
   )

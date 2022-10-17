@@ -9,8 +9,8 @@ const QuickViewForm = ({handleForm}) => {
              </p>
           </div>
            <div className="button-form">
-              <button onClick={()=>handleForm((previous)=>(previous==false))}>Close</button>
-              <button onClick={()=>handleForm((previous)=>(previous==false))}>Ok</button>
+              <button onClick={()=>handleForm((previous)=>(previous=false))}>Close</button>
+              <button onClick={()=>handleForm((previous)=>(previous=false))}>Ok</button>
            </div>
     </div>
   )

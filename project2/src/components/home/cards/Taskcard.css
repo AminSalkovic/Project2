@@ -4,11 +4,13 @@
     align-items: center;
     width: 100%;
     height: 80px;
-    border: 1px solid rgb(30, 142, 161);
+    background-color: var(--white);
 }
 .taskcard-part1{
     display: flex;
     align-items: center;
+    margin-left: -40px;
+    margin-right:20px;
 }
 .taskcard h1{
     font-size:13px;
@@ -31,6 +33,14 @@
 }
 .title{
     margin-left: 10px;
+}
+.taskcard-part2{
+    margin-left: 100px;
+}
+.taskcard-part2-p{
+    margin-left: 18px;
+    font-size: 13px;
+    color: gray;
 }
 .progress-input{
     width: 59px;

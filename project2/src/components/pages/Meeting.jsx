@@ -2,7 +2,7 @@ import React from 'react'
 
 const Meeting = () => {
   return (
-    <div>Meeting</div>
+    <h1 style={{position:'absolute',top:'50%',left:'50%'}}>Meeting</h1>
   )
 }
 

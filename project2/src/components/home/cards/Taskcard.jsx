@@ -1,6 +1,6 @@
 import React from 'react'
 import './Taskcard.css'
-const Taskcard = ({title,subtitle,progress,img}) => {
+const Taskcard = ({title,subtitle,progress,img,date}) => {
   const firstStyle = {backgroundColor:'#f70a16'}
   const secondStyle = {backgroundColor:'#ff5c11',width:'34px'}
   const thirdStyle={backgroundColor:'#0f6fec',width:'45px'}
@@ -28,8 +28,8 @@ const Taskcard = ({title,subtitle,progress,img}) => {
              </div>
      </div>
            <div className="taskcard-part2">
+                <p className='taskcard-part2-p'>{date}</p>
                 <div className="progress">
-
                     <div className="progress-input">
                         <div style={style} className="progress-percent">
                                <p>{progress}%</p>
